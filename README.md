@@ -12,8 +12,8 @@ Select a term or passage and Sprout uses the Anthropic API to generate a linked 
 
 Sprout isn't in the community plugin catalog yet, so install it manually:
 
-1. Get `main.js` and `manifest.json` from the latest release, or build them by cloning the repo and running `npm install && npm run build`.
-2. Place both files in `.obsidian/plugins/sprout/`.
+1. Clone the repo and run `npm install && npm run build` to produce `main.js`.
+2. Place `main.js` and `manifest.json` in `.obsidian/plugins/sprout/`.
 3. Enable **Sprout** under **Settings → Community plugins**.
 
 ## Setup
@@ -21,7 +21,7 @@ Sprout isn't in the community plugin catalog yet, so install it manually:
 Open **Settings → Sprout** and paste your Anthropic API key.
 
 > [!CAUTION]
-> Explaining a selection sends the selected text and surrounding context to the Anthropic API (a third party). Your API key is kept in Obsidian's secret storage, which is currently **not encrypted at rest**: it is saved unencrypted in local storage, where other software with access to that data could read it.
+> When you explain a selection, Sprout sends the selected text and surrounding context to the Anthropic API (a third party). Your API key is kept in Obsidian's secret storage, which is currently **not encrypted at rest**: it is saved unencrypted in local storage, where other software with access to that data could read it.
 
 ## Usage
 
