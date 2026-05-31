@@ -47,15 +47,17 @@ export function getContextAround(
     editor: Editor,
     from: EditorPosition,
     to: EditorPosition,
-    maxChars: number,
+    maxTotalChars: number,
 ): { leading: string; trailing: string } {
-    if (maxChars <= 0) return { leading: "", trailing: "" };
+    if (maxTotalChars <= 0) return { leading: "", trailing: "" };
     const doc = editor.getValue();
     const fromOffset = editor.posToOffset(from);
     const toOffset = editor.posToOffset(to);
+    const leadingChars = Math.floor(maxTotalChars / 2);
+    const trailingChars = maxTotalChars - leadingChars;
     return {
-        leading: doc.slice(Math.max(0, fromOffset - maxChars), fromOffset),
-        trailing: doc.slice(toOffset, toOffset + maxChars),
+        leading: doc.slice(Math.max(0, fromOffset - leadingChars), fromOffset),
+        trailing: doc.slice(toOffset, toOffset + trailingChars),
     };
 }
 
