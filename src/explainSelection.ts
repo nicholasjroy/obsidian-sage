@@ -77,7 +77,7 @@ export async function explainSelection(plugin: SproutPlugin, editor: Editor) {
             const noteBody = `${quoteCallout(selection)}\n\n${result.body}`;
             const created = await app.vault.create(path, noteBody);
             if (sourceFile) {
-                await app.fileManager.processFrontMatter(created, (frontmatter) => {
+                await app.fileManager.processFrontMatter(created, (frontmatter: Record<string, unknown>) => {
                     frontmatter.source = `[[${app.metadataCache.fileToLinktext(sourceFile, path)}]]`;
                 });
             }
