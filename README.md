@@ -8,23 +8,13 @@ Select a term or passage and Sprout uses the Anthropic API to generate a linked 
 - An [Anthropic API key](https://console.anthropic.com/)
 - Papers already in your vault as markdown (Sprout works on notes, not PDFs)
 
-## Installation
-
-Sprout isn't in the community plugin catalog yet, so install it manually:
-
-1. Clone the repo and run `npm install && npm run build` to produce `main.js`.
-2. Place `main.js` and `manifest.json` in `.obsidian/plugins/sprout-concepts/`.
-3. Enable **Sprout** under **Settings → Community plugins**.
-
 ## Setup
 
 Open **Settings → Sprout** and paste your Anthropic API key.
 
-> [!NOTE]
-> When you explain a selection, Sprout sends the selected text and up to 2000 characters (configurable) of surrounding context to the Anthropic API.
+> **Note:** When you explain a selection, Sprout sends the selected text and up to 2000 characters (configurable) of surrounding context to the Anthropic API.
 
-> [!CAUTION]
-> Your API key is kept in Obsidian's secret storage, which is currently not encrypted at rest: other programs on your computer could read it.
+> **Caution:** Your API key is kept in Obsidian's secret storage, which is currently not encrypted at rest: other programs on your computer could read it.
 
 ## Usage
 
@@ -46,4 +36,4 @@ If a concept note with the same title already exists, Sprout links to it instead
 
 ## License
 
-Released under the terms in [LICENSE](LICENSE).
+Released under the MIT License.
