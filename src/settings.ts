@@ -93,7 +93,7 @@ export class SproutSettingTab extends PluginSettingTab {
 
         new Setting(this.containerEl)
             .setName("Context length")
-            .setDesc("Max number of characters before and after the selection to send as context.")
+            .setDesc("Total number of characters around the selection to send as context.")
             .addText((text) => {
                 text.inputEl.type = "number";
                 text.inputEl.min = "0";
