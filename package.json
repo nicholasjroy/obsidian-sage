@@ -1,7 +1,7 @@
 {
 	"name": "obsidian-sage",
 	"version": "0.1.1",
-	"description": "Highlight a term and get a linked concept note added to your vault.",
+	"description": "Generate linked concept notes from selected text in your vault.",
 	"main": "main.js",
 	"type": "module",
 	"scripts": {
