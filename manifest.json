@@ -1,7 +1,7 @@
 {
 	"id": "sage",
 	"name": "Sage",
-	"version": "0.1.0",
+	"version": "0.1.1",
 	"minAppVersion": "1.11.4",
 	"description": "Generate linked concept notes from selected text in your vault.",
 	"author": "nicholasjroy",
