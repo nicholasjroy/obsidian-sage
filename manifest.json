@@ -4,7 +4,7 @@
 	"version": "0.1.0",
 	"minAppVersion": "1.11.4",
 	"description": "Generate linked concept notes from selected text in your vault.",
-	"author": "NetworkGestalt",
-	"authorUrl": "https://github.com/NetworkGestalt",
+	"author": "nicholasjroy",
+	"authorUrl": "https://github.com/nicholasjroy",
 	"isDesktopOnly": false
 }
